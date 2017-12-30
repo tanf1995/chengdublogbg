@@ -1,0 +1,723 @@
+/*重置*/
+*{
+    margin: 0;
+    padding: 0;
+}
+h3,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 微软雅黑;
+    min-width: 1080px;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*头部*/
+header{
+    box-sizing: border-box;
+    padding: 0 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    min-width: 1080px;
+    height: 100px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 10000;
+}
+/*头部导航框动画*/
+.headActive{
+    transform: translateY(-100px);
+    animation: headActive 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes headActive {
+    0%{
+        transform: translateY(-100px);
+    }
+    60%{
+        transform: translateY(-100px);
+    }
+    70%{
+        transform: translateY(120px);
+    }
+    80%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header .logo{
+    font-size: 40px;
+    color: #fff;
+}
+header .logo span{
+    color: #000;
+    text-shadow: 2px 2px 2px #fff;
+    padding-left: 5px;
+    font-size: 35px;
+}
+header nav{
+    float: right;
+}
+header nav a{
+    color: #fff;
+    font-size: 20px;
+}
+header nav a:not(:last-child){
+    margin-right: 30px;
+}
+header nav a:hover{
+    color: #555;
+}
+header nav .active{
+    color: #555;
+}
+/*end*/
+
+/*主页图片展示*/
+.view{
+    width: 100%;
+    height: 700px;
+    background-image: url(../image/back.jpg);
+    background-size: 100% 100%;
+    color: #fff;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-left: 200px;
+}
+.view p{
+    font-size: 40px;
+    line-height: 80px;
+    animation: sayingAni 2s;
+    animation-fill-mode: forwards;
+}
+.view p:nth-child(1){
+    animation: sayingAni 4s;
+    animation-fill-mode: forwards;
+}
+.view p:nth-child(2){
+    animation: sayingAni 6s;
+    animation-fill-mode: forwards;
+}
+/*文字动画*/
+@keyframes sayingAni {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.view button{
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    margin-left: 100px;
+    border: none;
+    outline: none;
+    animation: sayingAni 8s;
+    animation-fill-mode: forwards;
+    transition: all 0.3s linear;
+}
+.view button span{
+    font-size: 30px;
+}
+.view button:hover{
+    border-radius: 20px;
+}
+.view button:hover span{
+    color: #eee;
+}
+/*end*/
+
+/*占位*/
+.useless{
+    height: 50px;
+    display: table;
+}
+/*end*/
+
+/*页面主体*/
+.main{
+    width: 1080px;
+    margin: 50px auto 0;
+}
+.main > h2{
+    background-image: url("../image/h_line.jpg");
+    height: 12px;
+    line-height: 4px;
+}
+.main > h2 > span{
+    background-color: #fff;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.main > h2 > span span{
+    color: tomato;
+}
+/*文章细节页面位置展示*/
+.main .position span{
+    font-size: 14px;
+    transform: translateY(-3px);
+    color: #999;
+}
+.main .position span a:first-child{
+    padding-left: 10px;
+}
+.main .position span a{
+    color: #000;
+}
+/*主体左边部分*/
+.main .left{
+    width: 800px;
+    float: left;
+    background-image: url("../image/h_line.jpg");
+    box-sizing: border-box;
+    padding-right: 12px;
+}
+/*主体右边*/
+.main .right{
+    width: 280px;
+    height: 1000px;
+    float: left;
+}
+/*关于页面中的介绍*/
+.main .left .brief{
+    padding-right: 50px;
+    height: 1000px;
+}
+/*单篇文章*/
+.main .left .detail{
+    background-color: #fff;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.main .left .detail h3{
+    text-align: center;
+    color: #777;
+}
+.main .left .detail .info{
+    text-align: center;
+    border: 1px dotted #666;
+    margin-top: 20px;
+    color: #666;
+}
+.main .left .detail .info span{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+.main .left .detail .content{
+    margin-top: 50px;
+}
+.main .left .detail .content p{
+    line-height: 30px;
+}
+.main .left .detail .content img{
+    width: 100%;
+    height: auto;
+}
+.main .left .detail .keyWord{
+    background-color: #eee;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin:30px 0;
+    padding-left: 20px;
+    color: #666;
+}
+.main .left .detail .keyWord span:first-child{
+    padding-right: 10px;
+}
+.main .left .detail .keyWord span:nth-child(n+2){
+    color: #5cb85c;
+}
+/*文章列表*/
+.main .blogList .article{
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main .blogList .tech{
+    border-bottom: 1px dotted #aaa;
+    padding-bottom: 20px;
+}
+.main .blogList .article h3{
+    font-size: 16px;
+    line-height: 50px;
+    margin: 0;
+    font-weight: bold;
+}
+.blogList .article .content .img{
+    width: 200px;
+    height: 130px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    float: left;
+}
+.blogList .article .content .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.blogList .article .content .desc{
+    width: 540px;
+    float: left;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #777;
+}
+.blogList .article .content .btn{
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.blogList .article .foot{
+    margin-top: 20px;
+    background-color: #eee;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    margin-right: 15px;
+    color: #777;
+}
+.blogList .tech .foot{
+    background-color: #fff;
+    margin-top: 0;
+    padding-left: 0;
+}
+.blogList .article .foot > span{
+    margin-right: 20px;
+}
+.blogList .article .foot .pubTime{
+    padding-left: 5px;
+}
+.blogList .article .foot .classify a{
+    color: tomato;
+}
+.blogList .paging{
+    background-color: #fff;
+    text-align: center;
+}
+.blogList .paging ul .active a{
+    background-color: tomato;
+    border-color: tomato;
+}
+/*留言板*/
+.main .left .message{
+    background-color: #fff;
+    padding-top: 20px;
+}
+.main .left .message form{
+    padding-right: 5%;
+}
+.main .left .message > ul li{
+    list-style: none;
+    min-height: 150px;
+    background-image: url("../image/paper3.jpg");
+    width: 95%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.main .left .message > ul li .name{
+    font-size: 14px;
+}
+.main .left .message > ul li .content{
+    margin-top: 10px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+/*右边侧栏部分*/
+.main .aside{
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+/*主页天气预报*/
+.main .aside .weather{
+    height: 200px;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.main .aside .weather .content{
+    background-image: url("../image/weather_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    text-align: right;
+}
+.main .aside .weather .content .city{
+    float: left;
+    width: 60%;
+    height: 120px;
+    line-height: 120px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.main .aside .weather .content .city p{
+    margin-right: 20px;
+}
+.main .aside .weather .content .weather{
+    float: left;
+    width: 40%;
+    height: 120px;
+}
+.main .aside .weather .content .info p{
+    margin-right: 20px;
+    line-height: 16px;
+}
+.main .aside .weather .content .info p:first-child{
+    margin-top: 40px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+/*分享*/
+.main .aside .share{
+    position: relative;
+}
+.main .aside .share > a{
+    margin-right: 5px;
+    opacity: 0.7;
+}
+.main .aside .share a:hover{
+    opacity:1;
+}
+.main .aside .share .more{
+    position: absolute;
+    top: 18px;
+    width: 220px;
+    height: 280px;
+    border: 1px solid #eee;
+    visibility: hidden;
+    z-index: 100000;
+    background-color: #fff;
+}
+.main .aside .share .icon-more:hover ~ .more{
+    visibility: visible;
+}
+.main .aside .share .more:hover{
+    visibility: visible;
+}
+.main .aside .share .more .mid{
+    width: 220px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.main .aside .share .more .mid a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+.main .aside .share .more .mid a:hover{
+    background-color: #eee;
+}
+.main .aside .share .more p{
+    height: 30px;
+    background-color: #eee;
+    line-height: 30px;
+    text-indent: 15px;
+    font-size: 16px;
+}
+.main .aside .share .more p:last-child{
+    font-size: 12px;
+    text-align: right;
+    padding-right: 15px;
+    cursor: pointer;
+}
+/*侧栏最新文章*/
+.main .aside .newest{
+    border-top: 4px solid #eee;
+    margin-top: 10px;
+    position: relative;
+    padding-top: 20px;
+}
+.main .aside .newest:not(:first-child){
+    margin-top: 30px;
+}
+.main .aside .newest h2{
+    margin: 0;
+    font-size: 18px;
+    position: absolute;
+    top: -13px;
+    background-color: #fff;
+    padding-right: 20px;
+}
+.main .aside .newest h2 span{
+    color: #5cb85c;
+}
+.main .aside .newest li{
+    margin-left: 20px;
+    height: 30px;
+    line-height: 30px;
+}
+.main .aside .newest ul li:first-child a{
+    color: tomato;
+    font-size: 16px;
+}
+.main .aside .newest ol li{
+    border-bottom: 1px dotted #666;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+
+}
+.main .aside .newest ol li span{
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #aaa;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.main .aside .newest ol li:first-child span{
+    background-color: aqua;
+}
+.main .aside .other p{
+    background-color: #ddd;
+    border-radius: 40%;
+    text-align: center;
+}
+/*关于页面个人简介*/
+.main .aside .myInfo{
+    padding-top: 20px;
+
+}
+.main .aside .myInfo li{
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+}
+.main .aside .myInfo li span{
+    font-size: 16px;
+    color: #999;
+}
+.main .aside .cube{
+    width: 150px;
+    height: 150px;
+    margin: 100px auto 0;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotates 5s linear infinite;
+}
+@keyframes rotates{
+    from{
+    }
+    to{
+        transform: rotate3d(-1, -2, 0, 360deg);
+        /*
+        rotate3d(x, y, z, deg)
+        x--表示旋转轴x坐标方向的矢量
+        y--表示旋转轴y坐标方向的矢量
+        z--表示旋转轴z坐标方向的矢量
+        deg--旋转角度，正的代表顺时针
+        */
+    }
+}
+.main .aside .cube > div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.main .aside .cube table td{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 3px solid #000;
+}
+.main .aside .cube > div:nth-child(1) td{
+    background-color: #fff;
+}
+.main .aside .cube > div:nth-child(2) td{
+    background-color: yellow;
+}
+.main .aside .cube > div:nth-child(3) td{
+    background-color: red;
+}
+.main .aside .cube > div:nth-child(4) td{
+    background-color: green;
+}
+.main .aside .cube > div:nth-child(5) td{
+    background-color: chocolate;
+}
+.main .aside .cube > div:nth-child(6) td{
+    background-color: blue;
+}
+.main .aside .cube > div:nth-child(1){
+    transform: translateZ(75px);
+}
+.main .aside .cube > div:nth-child(2){
+    transform: translateZ(-75px);
+}
+.main .aside .cube > div:nth-child(3){
+    transform: rotateY(90deg) translateZ(75px);
+}
+.main .aside .cube > div:nth-child(4){
+    transform: rotateY(-90deg) translateZ(75px);
+}
+.main .aside .cube > div:nth-child(5){
+    transform: rotateX(90deg) translateZ(75px);
+}
+.main .aside .cube > div:nth-child(6){
+    transform: rotateX(-90deg) translateZ(75px);
+}
+/*end*/
+
+/*时光轴页面*/
+.timeBody{
+    background-color: #000;
+}
+.timeBody ul li{
+    list-style: none;
+}
+.timeBody footer{
+    color: #fff;
+    background-color: inherit;
+}
+.timeBody .mid{
+    margin: 80px auto 0;
+    width: 1080px;
+    padding: 0 150px;
+    border-top: 1px dashed #777;
+    min-height: 800px;
+    position: relative;
+    color: #aaa;
+}
+.timeBody .mid > span{
+    font-size: 20px;
+    position: absolute;
+    top: -15px;
+    left: 500px;
+    background-color: #000;
+    padding: 0 20px;
+}
+.timeBody .mid .time, .timeBody .mid .content{
+    float: left;
+}
+.timeBody .mid li{
+    margin-bottom: 20px;
+}
+.timeBody .mid .time{
+    width: 30%;
+    position: relative;
+}
+.timeBody .mid .content{
+    width: 70%;
+}
+.timeBody .mid .year{
+    font-size: 25px;
+    line-height: 100px;
+    background-color: #000;
+    padding: 0 20px;
+    position: relative;
+    right: 50px;
+    cursor: pointer;
+}
+.timeBody .mid > ul{
+    margin-top: -50px;
+}
+.timeBody .mid .wire{
+    width: 5px;
+    height: 100%;
+    background-color: #b2dba1;
+    position: absolute;
+    top: 0;
+    left: 30%;
+}
+.timeBody .mid .wire > div{
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    margin-left: -18px;
+    margin-top: -20px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+.timeBody .mid .time div{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #000;
+}
+.timeBody .mid .time > div{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 43px;
+    z-index: 1000;
+}
+.timeBody .mid .time > div div{
+    width: 20px;
+    height: 20px;
+    margin: 3px 0 0 3px;
+}
+/*end*/
+
+/*底部*/
+footer{
+    background-color: #eee;
+    margin-top: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+footer p{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid #999;
+    box-sizing: border-box;
+}
+footer .up{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    opacity: 0;
+    visibility: hidden;
+}
+footer .up .inner span{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 5px;
+    color: #444;
+}
+footer .up:hover{
+    transform: rotate(360deg);
+}
+footer .upShow{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s linear;
+}
+footer .upHide{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s linear;
+}
+/*end*/

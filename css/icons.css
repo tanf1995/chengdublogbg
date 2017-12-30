@@ -1,0 +1,70 @@
+/*图标*/
+.icon{
+    background-image: url("../image/icons_share.png");
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.icon-more{
+    background-position-y: 0;
+}
+/*qq空间*/
+.icon-qqZone{
+    background-position-y: -52px;
+}
+/*新浪微博*/
+.icon-sinaMb{
+    background-position-y: -104px;
+}
+/*百度*/
+.icon-baidu{
+    background-position-y: -156px;
+}
+/*人人网*/
+.icon-renren{
+    background-position-y: -208px;
+}
+/*腾讯微博*/
+.icon-qqMb{
+    background-position-y: -260px;
+}
+/*开心网*/
+.icon-happy{
+    background-position-y: -312px;
+}
+/*朋友网*/
+.icon-friend{
+    background-position-y: -364px;
+}
+/*豆瓣*/
+.icon-douban{
+    background-position-y: -468px;
+}
+/*腾讯网*/
+.icon-tengxun{
+    background-position-y: -676px;
+}
+/*淘宝*/
+.icon-taobao{
+    background-position-y: -728px;
+}
+/*百度贴吧*/
+.icon-tieba{
+    background-position-y: -780px;
+}
+/*天涯网*/
+.icon-tianya{
+    background-position-y: -1196px;
+}
+/*facebook*/
+.icon-facebook{
+    background-position-y: -1352px;
+}
+/*微信*/
+.icon-weixin{
+    background-position-y: -1612px;
+}
+/*一键分享*/
+.icon-allShare{
+    background-position-y: -1612px;
+}
