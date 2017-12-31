@@ -8,6 +8,12 @@ $(function () {
     var nowTopPos = 0;
     var timeRecord = $('.timeBody .mid .year');
     var timeRecordUl = $('.timeBody .mid ul ul');
+    var articleDesc = $('.article .desc');
+
+//设置描述信息
+    articleDesc.each(function(){
+        $(this).html($(this).text().substr(0, 80) + '...');
+    });
 
     //滚动条下滑
     viewDown.click(function () {
@@ -42,8 +48,6 @@ $(function () {
     });
 
 //    时间轴页面收拉效果
-    console.log(timeRecord.length);
-    console.log(timeRecordUl.length);
     timeRecord.each(function (i) {
         $(this).click(function () {
             $(this).children('span').eq(1).toggleClass('glyphicon-menu-right').toggleClass('glyphicon-menu-down');

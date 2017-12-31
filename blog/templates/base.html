@@ -1,0 +1,154 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ name }}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+{% block content1 %}
+{% endblock content1 %}
+
+{% block content2 %}
+            {% for article in article_list %}
+            <div class="article {{ other_class }}">
+                <h3><a href="">{{ article.A_title }}</a></h3>
+                <div class="content clearfix">
+                    <div class="img">
+                        <img src="{{ article.A_cover }}" alt="">
+                    </div>
+                    <span class="desc">{{ article.A_content|safe }}</span>
+                    <a href="{% url 'blog:article' article.id %}" target="_blank"><button type="button" class="btn btn-success">阅读全文 >></button></a>
+                </div>
+                <p class="foot">
+                        <span class="glyphicon glyphicon-time">
+                            <span class="pubTime">{{ article.A_pubTime }}</span>
+                        </span>
+                    <span>
+                            作者：<span>{{ article.A_author }}</span>
+                        </span>
+                    <span class="classify">
+                            分类：[<a href="">{{ article.A_classify }}</a>]
+                        </span>
+                </p>
+            </div>
+            {% endfor %}
+            <nav aria-label="Page navigation" class="paging">
+                <ul class="pagination">
+                    {% if p.has_previous %}
+                    <li>
+                        <a href="#" aria-label="Previous">
+                    {% else %}
+                    <li class="disabled">
+                        <a aria-label="Previous">
+                    {% endif %}
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    {% for index in list_range %}
+                        {% if index == page_index %}
+                    <li class="active"><a href="#">{{ index }}</a></li>
+                        {% else %}
+                    <li><a href="#">{{ index }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if p.has_next %}
+                    <li>
+                        <a href="#" aria-label="Next">
+                    {% else %}
+                    <li class="disabled">
+                        <a aria-label="Next">
+                    {% endif %}
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right aside">
+{% endblock content2 %}
+
+{% block aside %}
+            <div class="share">
+                <a href="" class="icon icon-more"></a>
+                <a href="" class="icon icon-qqZone"></a>
+                <a href="" class="icon icon-sinaMb"></a>
+                <a href="" class="icon icon-qqMb"></a>
+                <a href="" class="icon icon-renren"></a>
+                <a href="" class="icon icon-weixin"></a>
+                <div class="more clearfix">
+                    <p>分享到</p>
+                    <div class="mid clearfix">
+                        <a href=""><span class="icon icon-allShare"></span> 一键分享</a>
+                        <a href=""><span class="icon icon-qqZone"></span> QQ空间</a>
+                        <a href=""><span class="icon icon-sinaMb"></span> 新浪微博</a>
+                        <a href=""><span class="icon icon-weixin"></span> 微信</a>
+                        <a href=""><span class="icon icon-renren"></span> 人人网</a>
+                        <a href=""><span class="icon icon-qqMb"></span> 腾讯微博</a>
+                        <a href=""><span class="icon icon-happy"></span> 开心网</a>
+                        <a href=""><span class="icon icon-friend"></span> 腾讯朋友</a>
+                        <a href=""><span class="icon icon-tieba"></span> 百度贴吧</a>
+                        <a href=""><span class="icon icon-douban"></span> 豆瓣网</a>
+                        <a href=""><span class="icon icon-baidu"></span> 百度</a>
+                        <a href=""><span class="icon icon-tianya"></span> 天涯网</a>
+                        <a href=""><span class="icon icon-facebook"></span> Facebook</a>
+                    </div>
+                    <p><span class="icon icon-more"></span> 更多...</p>
+                </div>
+            </div>
+            <div class="newest">
+                <h2>最新<span>文章</span></h2>
+                <ul>
+                    <li><a href="">浪漫显示的泰晤小镇</a></li>
+                    <li><a href="">如果是你，你会怎么选择</a></li>
+                    <li><a href="">周末之如何更好的玩遍横店</a></li>
+                    <li><a href="">Partial(部分方法，局部方法)，virtual</a></li>
+                    <li><a href="">C#冒泡排序-C#基础</a></li>
+                    <li><a href="">畅游美国加州1号公路</a></li>
+                    <li><a href="">跟着沈眉庄一起选择翡翠手镯</a></li>
+                    <li><a href="">去苏州玩那些景点才好</a></li>
+                </ul>
+            </div>
+            <div class="newest">
+                <h2>点击<span>排行</span></h2>
+                <ol>
+                    <li><span>1</span><a href="">浪漫显示的泰晤小镇</a></li>
+                    <li><span>2</span><a href="">如果是你，你会怎么选择</a></li>
+                    <li><span>3</span><a href="">周末之如何更好的玩遍横店</a></li>
+                    <li><span>4</span><a href="">Partial(部分方法，局部方法)</a></li>
+                    <li><span>5</span><a href="">C#冒泡排序-C#基础</a></li>
+                </ol>
+            </div>
+            <div class="newest other">
+                <h2>友情<span>链接</span></h2>
+                <p><a href="">github</a></p>
+            </div>
+            <div class="newest least">
+                <h2>最近<span>访客</span></h2>
+            </div>
+{% endblock aside %}
+        </div>
+    </div>
+
+    <footer>
+        <div class="up" id="up">
+            <div class="inner">
+                <span class="glyphicon glyphicon-arrow-up"></span>
+            </div>
+        </div>
+        <p>created by tanfeng. <span class="">**********</span></p>
+    </footer>
+
+    <script type="text/javascript" src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    {% block jsFiles %}{% endblock jsFiles %}
+    <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>

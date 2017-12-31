@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>time is never stay</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+{% extends 'base.html' %}
+
+{% block content1 %}
 <body class="timeBody">
     <header class="clearfix headActive">
         <span class="logo">TF<span>blog</span></span>
         <nav>
-            <a href="index.html">首页</a>
-            <a href="">关于我</a>
-            <a href="life.html">生活</a>
+            <a href="{% url 'blog:index' %}">首页</a>
+            <a href="{% url 'blog:about' %}">关于我</a>
+            <a href="{% url 'blog:life' %}">生活</a>
             <a class="active" href="">时光轴</a>
-            <a href="technique.html">技术分享</a>
-            <a href="webFeeling.html">感悟</a>
-            <a href="messages.html">留言板</a>
+            <a href="{% url 'blog:technique' %}">技术分享</a>
+            <a href="{% url 'blog:feeling' %}">感悟</a>
+            <a href="{% url 'blog:messages' %}">留言板</a>
         </nav>
     </header>
 
@@ -133,18 +126,6 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="up" id="up">
-            <div class="inner">
-                <span class="glyphicon glyphicon-arrow-up"></span>
-            </div>
-        </div>
-        <p>created by tanfeng. <span class="">**********</span></p>
-    </footer>
-
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-</body>
-</html>
+{% endblock content1 %}
+{% block content2 %}{% endblock content2 %}
+{% block aside %}{% endblock aside %}
