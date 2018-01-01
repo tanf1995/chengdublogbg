@@ -42,7 +42,7 @@
                 <ul class="pagination">
                     {% if p.has_previous %}
                     <li>
-                        <a href="#" aria-label="Previous">
+                        <a href="?page={{ index|add:'-1' }}" aria-label="Previous">
                     {% else %}
                     <li class="disabled">
                         <a aria-label="Previous">
@@ -52,15 +52,15 @@
                     </li>
                     {% for index in list_range %}
                         {% if index == page_index %}
-                    <li class="active"><a href="#">{{ index }}</a></li>
+                    <li class="active"><a>{{ index }}</a></li>
                         {% else %}
-                    <li><a href="#">{{ index }}</a></li>
+                    <li><a href="?page={{ index }}">{{ index }}</a></li>
                         {% endif %}
                     {% endfor %}
 
                     {% if p.has_next %}
                     <li>
-                        <a href="#" aria-label="Next">
+                        <a href="?page={{ index|add:'1' }}" aria-label="Next">
                     {% else %}
                     <li class="disabled">
                         <a aria-label="Next">
@@ -105,24 +105,17 @@
             <div class="newest">
                 <h2>最新<span>文章</span></h2>
                 <ul>
-                    <li><a href="">浪漫显示的泰晤小镇</a></li>
-                    <li><a href="">如果是你，你会怎么选择</a></li>
-                    <li><a href="">周末之如何更好的玩遍横店</a></li>
-                    <li><a href="">Partial(部分方法，局部方法)，virtual</a></li>
-                    <li><a href="">C#冒泡排序-C#基础</a></li>
-                    <li><a href="">畅游美国加州1号公路</a></li>
-                    <li><a href="">跟着沈眉庄一起选择翡翠手镯</a></li>
-                    <li><a href="">去苏州玩那些景点才好</a></li>
+                    {% for article in newest_art %}
+                    <li><a href="{% url 'blog:article' article.id %}">{{ article.A_title }}</a></li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="newest">
                 <h2>点击<span>排行</span></h2>
                 <ol>
-                    <li><span>1</span><a href="">浪漫显示的泰晤小镇</a></li>
-                    <li><span>2</span><a href="">如果是你，你会怎么选择</a></li>
-                    <li><span>3</span><a href="">周末之如何更好的玩遍横店</a></li>
-                    <li><span>4</span><a href="">Partial(部分方法，局部方法)</a></li>
-                    <li><span>5</span><a href="">C#冒泡排序-C#基础</a></li>
+                    {% for article in hottest_art %}
+                    <li><span>{{ forloop.counter }}</span><a href="{% url 'blog:article' article.id %}">{{ article.A_title }}</a></li>
+                    {% endfor %}
                 </ol>
             </div>
             <div class="newest other">

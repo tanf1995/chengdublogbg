@@ -463,8 +463,7 @@ header nav .active{
 }
 .main .aside .newest li{
     margin-left: 20px;
-    height: 30px;
-    line-height: 30px;
+    padding: 5px 0;
 }
 .main .aside .newest ul li:first-child a{
     color: tomato;

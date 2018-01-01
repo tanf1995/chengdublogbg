@@ -27,6 +27,9 @@ class Article(models.Model):
     def __str__(self):
         return self.A_title.encode('utf-8')
 
+    class Meta():
+        ordering = ['-id']
+
 
 # 留言板
 class Message(models.Model):
@@ -42,7 +45,7 @@ class Message(models.Model):
 class Record(models.Model):
     R_pubTime = models.DateField(auto_now_add=True)
     R_content = models.CharField(max_length=4000)
-    R_delete = models.BooleanField(default=True)
+    R_delete = models.BooleanField(default=False)
 
     def __str__(self):
         return self.R_content[:10].encode('utf-8')

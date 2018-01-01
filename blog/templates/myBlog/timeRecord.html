@@ -20,105 +20,24 @@
     <div class="mid">
         <span>一万年太久，只争朝夕</span>
         <ul>
+            {% for i in list %}
             <li>
-                <span class="year"><span>2017</span>年 <span class="glyphicon glyphicon-menu-down"></span></span>
+                <span class="year"><span>{{ i.0 }}</span>年 <span class="glyphicon glyphicon-menu-down"></span></span>
                 <ul>
+                    {% for j in i.1 %}
                     <li class="clearfix">
                         <div class="time">
-                            <span>06</span>月<span>08</span>日
+                            <span>{{ j.R_pubTime.month }}</span>月<span>{{ j.R_pubTime.day }}</span>日
                             <div><div></div></div>
                         </div>
                         <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
+                            {{ j.R_content }}
                         </div>
                     </li>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
+                    {% endfor %}
                 </ul>
             </li>
-            <li>
-                <span class="year"><span>2016</span>年 <span class="glyphicon glyphicon-menu-down"></span></span>
-                <ul>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <span class="year"><span>2015</span>年 <span class="glyphicon glyphicon-menu-down"></span></span>
-                <ul>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                    <li class="clearfix">
-                        <div class="time">
-                            <span>06</span>月<span>08</span>日
-                            <div><div></div></div>
-                        </div>
-                        <div class="content">
-                            内容内容内容内容内容内容内容内容内容内容内容内容内容
-                        </div>
-                    </li>
-                </ul>
-            </li>
+            {% endfor %}
         </ul>
         <div class="wire">
             <div>
