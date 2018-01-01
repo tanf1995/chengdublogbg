@@ -3,8 +3,8 @@
  */
 $(function () {
     // 飘雪效果
-    var allWidth = $(document).width();
-    var allHeight = $(document).height();
+    var allWidth = $(window).width();
+    var allHeight = $(window).height();
 
     //生成雪花
     function Snow() {

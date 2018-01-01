@@ -40,6 +40,9 @@ class Message(models.Model):
     def __str__(self):
         return self.M_content[:10].encode('utf-8')
 
+    class Meta():
+        ordering = ['-id']
+
 
 # 自己的记录
 class Record(models.Model):

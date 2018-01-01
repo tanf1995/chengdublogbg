@@ -1,6 +1,8 @@
 # coding=utf-8
 from django.shortcuts import render
 from django.core.paginator import Paginator
+from django.http import HttpResponseRedirect
+from django.core.urlresolvers import reverse
 from models import *
 
 
@@ -75,8 +77,8 @@ def feeling(request):
     article_list = p.page(page_index)  # 当前页列表
     list_range = p.page_range  # 页码列表
 
-    context = {'name': 'this is a question', 'article_list': article_list,\
-               'list_range': list_range, 'p': p, 'page_index': page_index,\
+    context = {'name': 'this is a question', 'article_list': article_list,
+               'list_range': list_range, 'p': p, 'page_index': page_index,
                'newest_art': newest_art, 'hottest_art': hottest_art}
     return render(request, 'myBlog/webFeeling.html', context=context)
 
@@ -85,8 +87,34 @@ def feeling(request):
 def messages(request):
     newest_art = Article.objects.filter(A_delete=False)[:7]
     hottest_art = Article.objects.filter(A_delete=False).order_by('-A_clickNum')[:5]
-    context = {'name': 'messages', 'newest_art': newest_art, 'hottest_art': hottest_art}
+
+    messages_list = Message.objects.filter(M_delete=False)
+    # 分页
+    page_index = request.GET.get('page', '')
+    p = Paginator(messages_list, 8)  # 分页器
+    if page_index == '':
+        page_index = '1'
+    page_index = int(page_index)  # 当前页页码
+    messages_list = p.page(page_index)  # 当前页列表
+    list_range = p.page_range  # 页码列表
+
+    context = {'name': 'messages', 'newest_art': newest_art, 'hottest_art': hottest_art,
+               'list_range': list_range, 'p': p, 'page_index': page_index,
+               'messages_list': messages_list}
     return render(request, 'myBlog/messages.html', context=context)
+
+
+# 提交留言
+def messageHandler(request):
+    name = request.POST.get('name', '')
+    content = request.POST.get('content', '')
+    if name and content:
+        message = Message()
+        message.M_author = name
+        message.M_content = content
+        message.save()
+
+    return HttpResponseRedirect(reverse('blog:messages'))
 
 
 # 时光轴
