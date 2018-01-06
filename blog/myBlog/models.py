@@ -29,9 +29,7 @@ class Article(models.Model):
 
     class Meta():
         ordering = ['-id']
-        db_table = 'article'
-        verbose_name = "富文本编辑器"
-        verbose_name_plural = "富文本编辑器"
+        db_table = 'myBlog_article'
 
 
 # 留言板

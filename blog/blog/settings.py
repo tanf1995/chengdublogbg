@@ -39,15 +39,15 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myBlog',  # 添加自定义应用
-    'tinymce',  # 富文本编辑器
+    # 'tinymce',  # 富文本编辑器
 )
 
 # 富文本编辑器配置
-TINYMCE_DEFAULT_CONFIG = {
-    'theme': 'advanced',
-    'width': 600,
-    'height': 800,
-}
+# TINYMCE_DEFAULT_CONFIG = {
+#     'theme': 'advanced',
+#     'width': 600,
+#     'height': 800,
+# }
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
