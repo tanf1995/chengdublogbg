@@ -20,7 +20,7 @@ class Article(models.Model):
     A_clickNum = models.IntegerField(default=0)
     A_keyword = models.CharField(max_length=100, blank=True, null=True)
     A_cover = models.ImageField(upload_to='articleImg')  # 封面图, 设置默认图片
-    A_content = HTMLField()  # 富文本编辑器的使用
+    A_content = models.TextField()  # 富文本编辑器的使用
     A_classify = models.ForeignKey(Classify)
     A_delete = models.BooleanField(default=False)
 
@@ -29,6 +29,9 @@ class Article(models.Model):
 
     class Meta():
         ordering = ['-id']
+        db_table = 'article'
+        verbose_name = "富文本编辑器"
+        verbose_name_plural = "富文本编辑器"
 
 
 # 留言板

@@ -7,4 +7,11 @@ admin.site.register(Article)
 admin.site.register(Message)
 admin.site.register(Record)
 
-
+class ArticleTinymce_Admin(admin.ModelAdmin):
+    class Meta:
+        js = [
+            '/static/tinymce/js/jquery-3.2.1.min.js',  # 必须首先加载的jquery，手动添加文件
+            '/static/tinymce/js/tinymce/tinymce.min.js',  # tinymce自带文件
+            '/static/tinymce/js/tinymce/plugins/jquery.form.js',  # 手动添加文件
+            '/static/tinymce/js/tinymce/textarea.js',  # 手动添加文件，用户初始化参数
+        ]
