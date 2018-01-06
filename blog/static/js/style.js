@@ -44,24 +44,3 @@ $(function () {
         snow = null;
     }, 500)
 });
-
-// $(function () {
-//     var snow = $('<p></p>');
-//     snow.html('*');
-//     snow.css({
-//         fontSize: 20,
-//         color: '#fff',
-//         position: 'absolute',
-//         top: -20,
-//         left: 300,
-//         zIndex: 1000000
-//     });
-//
-//     $(document.body).append(snow);
-//
-//     snow.animate({
-//         top: 500
-//     }, 6000, function () {
-//         snow.remove();
-//     });
-// });

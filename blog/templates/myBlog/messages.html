@@ -31,9 +31,9 @@
                 </div>
                 <div class="form-group">
                     <label for="name">你的名字</label>
-                    <input type="text" class="form-control" name="name" id="name" value="{{ author_name }}">
+                    <input placeholder="匆匆过客" type="text" class="form-control" name="name" id="name" value="{{ user_name }}">
                 </div>
-                <button type="submit" class="btn btn-default">提交</button>
+                <button type="submit" class="btn btn-default" id="messageBtn">提交</button>
             </form>
             <ul>
                 {% for message in messages_list %}

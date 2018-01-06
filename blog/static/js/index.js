@@ -9,6 +9,8 @@ $(function () {
     var timeRecord = $('.timeBody .mid .year');
     var timeRecordUl = $('.timeBody .mid ul ul');
     var articleDesc = $('.article .desc');
+    var messageContent = $('#content');
+    var messageBtn = $('#messageBtn');
 
 //设置描述信息
     articleDesc.each(function(){
@@ -54,4 +56,14 @@ $(function () {
             timeRecordUl.eq(i).slideToggle(300);
         })
     })
+
+//     留言表单验证
+    messageBtn.click(function(){
+        if(!messageContent.val()){
+            messageContent.parent().addClass('has-error');
+            messageContent.attr('placeholder', '没有内容--');
+            return false;
+        }
+    }
+    );
 });

@@ -320,6 +320,9 @@ header nav .active{
 .main .left .message form{
     padding-right: 5%;
 }
+.main .left .message form #content{
+    outline-color: red !important;
+}
 .main .left .message > ul li{
     list-style: none;
     min-height: 150px;

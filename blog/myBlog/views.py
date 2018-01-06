@@ -89,6 +89,7 @@ def messages(request):
     hottest_art = Article.objects.filter(A_delete=False).order_by('-A_clickNum')[:5]
 
     messages_list = Message.objects.filter(M_delete=False)
+    user_name = request.session.get('user_name', '')
     # 分页
     page_index = request.GET.get('page', '')
     p = Paginator(messages_list, 8)  # 分页器
@@ -100,7 +101,7 @@ def messages(request):
 
     context = {'name': 'messages', 'newest_art': newest_art, 'hottest_art': hottest_art,
                'list_range': list_range, 'p': p, 'page_index': page_index,
-               'messages_list': messages_list}
+               'messages_list': messages_list, 'user_name': user_name}
     return render(request, 'myBlog/messages.html', context=context)
 
 
@@ -108,7 +109,15 @@ def messages(request):
 def messageHandler(request):
     name = request.POST.get('name', '')
     content = request.POST.get('content', '')
-    if name and content:
+    if name:
+        user_name = request.session.get('user_name', '')
+        if name != user_name:
+            request.session['user_name'] = name
+    else:
+        name = '匆匆过客'
+        request.session['user_name'] = ''
+
+    if content:
         message = Message()
         message.M_author = name
         message.M_content = content

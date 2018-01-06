@@ -20,7 +20,7 @@
                 <h3><a href="">{{ article.A_title }}</a></h3>
                 <div class="content clearfix">
                     <div class="img">
-                        <img src="{{ article.A_cover }}" alt="">
+                        <img src="{% static article.A_cover %}" alt="">
                     </div>
                     <span class="desc">{{ article.A_content|safe }}</span>
                     <a href="{% url 'blog:article' article.id %}" target="_blank"><button type="button" class="btn btn-success">阅读全文 >></button></a>

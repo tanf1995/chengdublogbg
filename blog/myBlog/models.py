@@ -19,7 +19,7 @@ class Article(models.Model):
     A_title = models.CharField(max_length=400)
     A_clickNum = models.IntegerField(default=0)
     A_keyword = models.CharField(max_length=100, blank=True, null=True)
-    A_cover = models.ImageField()  # 封面图, 设置默认图片
+    A_cover = models.ImageField(upload_to='articleImg')  # 封面图, 设置默认图片
     A_content = HTMLField()  # 富文本编辑器的使用
     A_classify = models.ForeignKey(Classify)
     A_delete = models.BooleanField(default=False)
