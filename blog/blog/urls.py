@@ -1,3 +1,4 @@
+#coding=utf-8
 """blog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,9 +16,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+from django.conf import settings
+from myBlog import views
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^', include('myBlog.urls', namespace='blog')),
-    url(r'^tinymce/', include('tinymce.urls')),
-]
+    url(r'^upload_img/$', views.upload_img)  # 后台富文本框上传图片
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

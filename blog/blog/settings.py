@@ -39,15 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myBlog',  # 添加自定义应用
-    # 'tinymce',  # 富文本编辑器
 )
-
-# 富文本编辑器配置
-# TINYMCE_DEFAULT_CONFIG = {
-#     'theme': 'advanced',
-#     'width': 600,
-#     'height': 800,
-# }
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -117,7 +109,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'media')
 ]
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/articleImg/')
 

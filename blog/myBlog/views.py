@@ -1,9 +1,18 @@
 # coding=utf-8
 from django.shortcuts import render
 from django.core.paginator import Paginator
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
+from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
 from models import *
+from PIL import Image
+import json
+import time
+
+
+static_base = 'http://192.168.40.128:8080/'
+static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
 
 
 # 主页
@@ -162,3 +171,28 @@ def article(request, id):
     context = {'name': 'article', 'article': the_article, 'classify': classify,\
                'newest_art': newest_art, 'hottest_art': hottest_art}
     return render(request, 'myBlog/detail.html', context=context)
+
+
+# 编辑文章时上传图片
+@csrf_exempt
+def upload_img(request):
+    up_file = request.FILES['file']
+    data = {
+        'error':True,
+        'path':'',
+    }
+    print 'tf'
+    if up_file:
+        print time.time()
+        timenow = int(time.time()*1000)
+        timenow = str(timenow)
+        try:
+            img = Image.open(up_file)
+            img.save(settings.MEDIA_ROOT + "content/" + timenow + unicode(str(up_file)))
+        except Exception, e:
+            print e
+            return HttpResponse(json.dumps(data), content_type="application/json")
+        imgUrl = static_url + 'content/' + timenow + str(up_file)
+        data['error'] = False
+        data['path'] = imgUrl
+    return HttpResponse(json.dumps(data), content_type="application/json")

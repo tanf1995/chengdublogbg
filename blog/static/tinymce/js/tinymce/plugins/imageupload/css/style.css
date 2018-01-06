@@ -19,6 +19,7 @@
     margin-left: -200px;
     z-index: 9999;
     background: #FFFFFF;
+    transform: scale(1);
 }
 .imageUploadContainer .imageUploadContainerInner {
     height: 200px;
