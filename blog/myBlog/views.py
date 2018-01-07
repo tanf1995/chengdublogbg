@@ -11,7 +11,7 @@ import json
 import time
 
 
-static_base = 'http://192.168.40.128:8080/'
+static_base = 'http://192.168.40.128:8080'
 static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
 
 
@@ -174,25 +174,25 @@ def article(request, id):
 
 
 # 编辑文章时上传图片
-@csrf_exempt
+@csrf_exempt  # 标注一个视图可以被跨域防问
 def upload_img(request):
+    print static_url
+    print settings.MEDIA_ROOT
     up_file = request.FILES['file']
     data = {
-        'error':True,
-        'path':'',
+        'error': True,
+        'path': '',
     }
-    print 'tf'
     if up_file:
-        print time.time()
-        timenow = int(time.time()*1000)
-        timenow = str(timenow)
+        now_time = str(int(time.time()*1000))
         try:
             img = Image.open(up_file)
-            img.save(settings.MEDIA_ROOT + "content/" + timenow + unicode(str(up_file)))
+            img.save(settings.MEDIA_ROOT + "/content/" + now_time + unicode(str(up_file)))
         except Exception, e:
             print e
             return HttpResponse(json.dumps(data), content_type="application/json")
-        imgUrl = static_url + 'content/' + timenow + str(up_file)
+        img_url = static_url + 'content/' + now_time + str(up_file)
         data['error'] = False
-        data['path'] = imgUrl
+        data['path'] = img_url
+    print data['path']
     return HttpResponse(json.dumps(data), content_type="application/json")

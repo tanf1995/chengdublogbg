@@ -115,5 +115,5 @@ STATICFILES_DIRS = [
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/articleImg/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media', 'upload')
 
