@@ -11,10 +11,6 @@ import json
 import time
 
 
-static_base = 'http://192.168.40.128:8080'
-static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
-
-
 # 主页
 def index(request):
     newest_art = Article.objects.filter(A_delete=False)[:7]
@@ -174,24 +170,28 @@ def article(request, id):
 
 
 # 编辑文章时上传图片
-@csrf_exempt  # 标注一个视图可以被跨域防问
+# 标注一个视图可以被跨域防问
+@csrf_exempt
 def upload_img(request):
-    print static_url
-    print settings.MEDIA_ROOT
-    up_file = request.FILES['file']
+    static_base = 'http://192.168.40.128:8080'
+    static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
+
+    file = request.FILES['file']
     data = {
         'error': True,
         'path': '',
     }
-    if up_file:
+    if file:
         now_time = str(int(time.time()*1000))
+        print static_url
+        print settings.MEDIA_ROOT
         try:
-            img = Image.open(up_file)
-            img.save(settings.MEDIA_ROOT + "/content/" + now_time + unicode(str(up_file)))
+            img = Image.open(file)
+            img.save(settings.MEDIA_ROOT + str(file), img.format)
         except Exception, e:
             print e
             return HttpResponse(json.dumps(data), content_type="application/json")
-        img_url = static_url + 'content/' + now_time + str(up_file)
+        img_url = static_url + str(file)
         data['error'] = False
         data['path'] = img_url
     print data['path']

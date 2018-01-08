@@ -13,5 +13,6 @@ urlpatterns = [
     url('^technique/$', views.technique, name='technique'),
     url('^feeling/$', views.feeling, name='feeling'),
     url('^time/$', views.time, name='time'),
-    url('^article/(?P<id>[0-9]+)/$', views.article, name='article')
-]
+    url('^article/(?P<id>[0-9]+)/$', views.article, name='article'),
+    url(r'^upload_img/$', views.upload_img)  # 后台富文本框上传图片
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
