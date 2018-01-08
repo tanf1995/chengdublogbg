@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<header class="clearfix headActive">
+    <span class="logo">TF<span>blog</span></span>
+    <nav>
+        <a href="{% url 'blog:index' %}">首页</a>
+        <a href="{% url 'blog:about' %}">关于我</a>
+        <a href="{% url 'blog:life' %}">生活</a>
+        <a href="{% url 'blog:time' %}">时光轴</a>
+        <a href="{% url 'blog:technique' %}">技术分享</a>
+        <a href="{% url 'blog:feeling' %}">感悟</a>
+        <a class="active" href="">留言板</a>
+    </nav>
+</header>
+
+<div class="useless"></div>
+
+<div class="main clearfix">
+    <h2><span>人生如逆旅，我亦是行人</span></h2>
+    <div class="left blogList">
+{% endblock content1 %}
+
+{% block content2 %}
+        <div class="message">
+            <form action="{% url 'blog:messagesHandler' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="content">说说什么吧...</label>
+                    <textarea class="form-control" rows="3" id="content" name="content"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="name">你的名字</label>
+                    <input placeholder="匆匆过客" type="text" class="form-control" name="name" id="name" value="{{ user_name }}">
+                </div>
+                <button type="submit" class="btn btn-default" id="messageBtn">提交</button>
+            </form>
+            <ul>
+                {% for message in messages_list %}
+                <li>
+                    <p class="name">{{ message.M_author }}</p><span>{{ message.M_pubTime }}</span>
+                    <p class="content">{{ message.M_content }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <nav aria-label="Page navigation" class="paging">
+                <ul class="pagination">
+                    {% if p.has_previous %}
+                    <li>
+                        <a href="?page={{ index|add:'-1' }}" aria-label="Previous">
+                    {% else %}
+                    <li class="disabled">
+                        <a aria-label="Previous">
+                    {% endif %}
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    {% for index in list_range %}
+                        {% if index == page_index %}
+                    <li class="active"><a>{{ index }}</a></li>
+                        {% else %}
+                    <li><a href="?page={{ index }}">{{ index }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if p.has_next %}
+                    <li>
+                        <a href="?page={{ index|add:'1' }}" aria-label="Next">
+                    {% else %}
+                    <li class="disabled">
+                        <a aria-label="Next">
+                    {% endif %}
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="right aside">
+{% endblock content2 %}

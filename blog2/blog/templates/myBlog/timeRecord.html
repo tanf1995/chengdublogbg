@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<body class="timeBody">
+    <header class="clearfix headActive">
+        <span class="logo">TF<span>blog</span></span>
+        <nav>
+            <a href="{% url 'blog:index' %}">首页</a>
+            <a href="{% url 'blog:about' %}">关于我</a>
+            <a href="{% url 'blog:life' %}">生活</a>
+            <a class="active" href="">时光轴</a>
+            <a href="{% url 'blog:technique' %}">技术分享</a>
+            <a href="{% url 'blog:feeling' %}">感悟</a>
+            <a href="{% url 'blog:messages' %}">留言板</a>
+        </nav>
+    </header>
+
+    <div class="useless"></div>
+
+    <div class="mid">
+        <span>一万年太久，只争朝夕</span>
+        <ul>
+            {% for i in list %}
+            <li>
+                <span class="year"><span>{{ i.0 }}</span>年 <span class="glyphicon glyphicon-menu-down"></span></span>
+                <ul>
+                    {% for j in i.1 %}
+                    <li class="clearfix">
+                        <div class="time">
+                            <span>{{ j.R_pubTime.month }}</span>月<span>{{ j.R_pubTime.day }}</span>日
+                            <div><div></div></div>
+                        </div>
+                        <div class="content">
+                            {{ j.R_content }}
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="wire">
+            <div>
+                <span class="glyphicon glyphicon-hourglass"></span>
+            </div>
+        </div>
+    </div>
+{% endblock content1 %}
+{% block content2 %}{% endblock content2 %}
+{% block aside %}{% endblock aside %}

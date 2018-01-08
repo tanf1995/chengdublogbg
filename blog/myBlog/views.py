@@ -132,7 +132,7 @@ def messageHandler(request):
 
 
 # 时光轴
-def time(request):
+def timeRecord(request):
     record = Record.objects.filter(R_delete=False).order_by('-R_pubTime')
     # 按时间分类展示
     list = []
@@ -169,30 +169,28 @@ def article(request, id):
     return render(request, 'myBlog/detail.html', context=context)
 
 
-# 编辑文章时上传图片
-# 标注一个视图可以被跨域防问
+static_base = 'http://192.168.40.128:8080'
+static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
+
+
+# 上传图片 POST
 @csrf_exempt
 def upload_img(request):
-    static_base = 'http://192.168.40.128:8080'
-    static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
-
     file = request.FILES['file']
     data = {
-        'error': True,
-        'path': '',
+        'error':True,
+        'path':'',
     }
     if file:
-        now_time = str(int(time.time()*1000))
-        print static_url
-        print settings.MEDIA_ROOT
+        timenow = int(time.time()*1000)
+        timenow = str(timenow)
         try:
             img = Image.open(file)
-            img.save(settings.MEDIA_ROOT + str(file), img.format)
-        except Exception, e:
+            img.save(settings.MEDIA_ROOT + "content/" + timenow + unicode(str(file)))
+        except Exception,e:
             print e
             return HttpResponse(json.dumps(data), content_type="application/json")
-        img_url = static_url + str(file)
+        imgUrl = static_url + 'content/' + timenow + str(file)
         data['error'] = False
-        data['path'] = img_url
-    print data['path']
+        data['path'] = imgUrl
     return HttpResponse(json.dumps(data), content_type="application/json")

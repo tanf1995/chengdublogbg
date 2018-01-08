@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<body>
+<header class="clearfix headActive">
+    <span class="logo">TF<span>blog</span></span>
+    <nav>
+        <a href="{% url 'blog:index' %}">首页</a>
+        <a href="{% url 'blog:about' %}">关于我</a>
+        <a href="{% url 'blog:life' %}">生活</a>
+        <a href="{% url 'blog:time' %}">时光轴</a>
+        <a href="{% url 'blog:technique' %}">技术分享</a>
+        <a class="active" href="">感悟</a>
+        <a href="{% url 'blog:messages' %}">留言板</a>
+    </nav>
+</header>
+
+<div class="useless"></div>
+
+<div class="main clearfix">
+    <h2 class="position">
+        <span class="glyphicon glyphicon-map-marker">
+            <a>首页</a>><a>{{ classify }}</a>><a>{{ article.A_title }}</a>
+        </span>
+    </h2>
+    <div class="left">
+        <div class="detail">
+            <h3>{{ article.A_title }}</h3>
+            <p class="info">
+                发表时间：<span>{{ article.A_pubTime }}</span>
+                编辑：<span>{{ article.A_author }}</span>
+                人气：<span>{{ article.A_clickNum }}</span>
+            </p>
+            <div class="content">
+                {{ article.A_content|safe }}
+            </div>
+            <p class="keyWord"><span class="glyphicon glyphicon-text-size"></span>关键字词：<span>{{ article.A_keyword }}</span></p>
+            <p>上一篇：<a href="">如果是你</a></p>
+            <p>下一篇：<a href="">出师表</a></p>
+        </div>
+    </div>
+    <div class="right aside">
+{% endblock content1 %}
+
+{% block content2 %}{% endblock content2 %}

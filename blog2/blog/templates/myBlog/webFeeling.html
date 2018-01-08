@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content1 %}
+<body>
+<header class="clearfix headActive">
+    <span class="logo">TF<span>blog</span></span>
+    <nav>
+        <a href="{% url 'blog:index' %}">首页</a>
+        <a href="{% url 'blog:about' %}">关于我</a>
+        <a href="{% url 'blog:life' %}">生活</a>
+        <a href="{% url 'blog:time' %}">时光轴</a>
+        <a href="{% url 'blog:technique' %}">技术分享</a>
+        <a class="active" href="">感悟</a>
+        <a href="{% url 'blog:messages' %}">留言板</a>
+    </nav>
+</header>
+
+<div class="useless"></div>
+
+<div class="main clearfix">
+    <h2><span>web感悟</span></h2>
+    <div class="left blogList">
+{% endblock content1 %}
