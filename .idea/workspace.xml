@@ -2,154 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dde2185d-d363-4e54-9ce7-fefd1d202ffe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/media/articleCover/art1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/media/articleCover/art1_HS6e1A3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/media/articleCover/art1_ov4fLph.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/media/articleCover/article.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/media/articleCover/article_9VaSVNB.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/media/articleCover/back.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/article.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/article2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/back.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/h_line.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/icons_share.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/paper3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/image/weather_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-cool.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-cry.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-embarassed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-foot-in-mouth.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-frown.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-innocent.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-kiss.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-laughing.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-money-mouth.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-sealed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-smile.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-surprised.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-tongue-out.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-undecided.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-wink.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/img/smiley-yell.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/help/img/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/imageupload/img/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-mobile.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/img/anchor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/img/object.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/img/trans.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/myBlog/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/css/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/js/style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/LICENSE.TXT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/changelog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/jquery-3.2.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/jquery.tinymce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/langs/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/langs/zh_CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/advlist/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/anchor/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/autolink/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/autoresize/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/autosave/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/bbcode/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/charmap/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/code/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/codesample/css/prism.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/codesample/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/colorpicker/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/contextmenu/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/directionality/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/emoticons/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/fullpage/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/fullscreen/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/help/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/hr/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/image/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/imagetools/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/imageupload/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/imageupload/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/importcss/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/insertdatetime/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/legacyoutput/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/link/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/lists/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/media/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/nonbreaking/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/noneditable/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/pagebreak/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/paste/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/preview/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/print/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/save/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/searchreplace/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/spellchecker/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/tabfocus/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/table/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/template/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/textcolor/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/textpattern/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/toc/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/visualblocks/css/visualblocks.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/visualblocks/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/visualchars/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/plugins/wordcount/plugin.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/content.inline.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/content.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/content.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce-small.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/skin.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/skins/lightgray/skin.mobile.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/textarea.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/themes/inlite/theme.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/themes/mobile/theme.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/themes/modern/theme.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/static/tinymce/js/tinymce/tinymce.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/aboutMe.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/life.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/messages.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/technique.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/timeRecord.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog2/blog/templates/myBlog/webFeeling.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/blog/static/css/icons.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/blog/settings.py" afterPath="$PROJECT_DIR$/blog/blog/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/myBlog/urls.py" afterPath="$PROJECT_DIR$/blog/myBlog/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/myBlog/views.py" afterPath="$PROJECT_DIR$/blog/myBlog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/static/css/index.css" afterPath="$PROJECT_DIR$/blog/static/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/myBlog/messages.html" afterPath="$PROJECT_DIR$/blog/templates/myBlog/messages.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tinymce/app/views.py" afterPath="$PROJECT_DIR$/tinymce/app/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tinymce/tinymce/settings.py" afterPath="$PROJECT_DIR$/tinymce/tinymce/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog/templates/base.html" afterPath="$PROJECT_DIR$/blog/templates/base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -160,31 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="messages.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/messages.html">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog/static/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="342" column="23" lean-forward="false" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/myBlog/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="417">
+              <caret line="116" column="99" lean-forward="true" selection-start-line="116" selection-start-column="99" selection-end-line="116" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -212,7 +47,6 @@
         <option value="$PROJECT_DIR$/blog/templates/myBlog/technique.html" />
         <option value="$PROJECT_DIR$/blog/templates/myBlog/webFeeling.html" />
         <option value="$PROJECT_DIR$/blog/templates/myBlog/aboutMe.html" />
-        <option value="$PROJECT_DIR$/blog/templates/base.html" />
         <option value="$PROJECT_DIR$/blog/templates/myBlog/timeRecord.html" />
         <option value="$PROJECT_DIR$/blog/static/js/style.js" />
         <option value="$PROJECT_DIR$/blog/myBlog/admin.py" />
@@ -233,12 +67,14 @@
         <option value="$PROJECT_DIR$/blog/myBlog/urls.py" />
         <option value="$PROJECT_DIR$/blog/templates/myBlog/messages.html" />
         <option value="$PROJECT_DIR$/blog/static/css/index.css" />
+        <option value="$PROJECT_DIR$/blog/share.py" />
+        <option value="$PROJECT_DIR$/blog/templates/base.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="70" />
-    <option name="y" value="60" />
+    <option name="x" value="75" />
+    <option name="y" value="64" />
     <option name="width" value="1271" />
     <option name="height" value="704" />
   </component>
@@ -278,19 +114,6 @@
               <item name="chengdublogbg" type="462c0819:PsiDirectoryNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="myBlog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chengdublogbg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chengdublogbg" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chengdublogbg" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chengdublogbg" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chengdublogbg" type="b2602c69:ProjectViewProjectNode" />
@@ -352,7 +175,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="60" width="1271" height="704" extended-state="0" />
+    <frame x="75" y="64" width="1271" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28166798" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -383,13 +206,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="32" column="71" lean-forward="true" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/myBlog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -411,9 +227,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1075">
           <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="e#15#43#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -515,13 +328,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog/art1.jpg" />
-    <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/life.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -561,13 +367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="62" column="33" lean-forward="false" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -613,24 +412,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinymce/media/upload/content/1515382412458art1.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tinymce/tinymce/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tinymce/media/upload/content/1515382412458art1.jpg" />
+    <entry file="file://$PROJECT_DIR$/tinymce/tinymce/settings.py" />
     <entry file="file://$PROJECT_DIR$/blog2/blog/static/js/npm.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -638,7 +425,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -646,7 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="124" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,9 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#638#679#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,9 +446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="56" />
-          <folding>
-            <element signature="e#627#668#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,9 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -684,9 +460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,27 +467,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tinymce/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding>
-            <element signature="e#22#57#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tinymce/app/views.py" />
     <entry file="file://$PROJECT_DIR$/blog2/blog/blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="145" column="0" lean-forward="true" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,9 +489,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
-          <folding>
-            <element signature="e#24#59#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,35 +496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
-          <folding>
-            <element signature="e#15#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/myBlog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
-          <folding>
-            <element signature="e#15#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/myBlog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/messages.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="40" column="63" lean-forward="true" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -776,6 +503,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="342" column="23" lean-forward="false" selection-start-line="342" selection-start-column="23" selection-end-line="342" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/messages.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="40" column="63" lean-forward="false" selection-start-line="40" selection-start-column="63" selection-end-line="40" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/myBlog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/share.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="625" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/myBlog/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/myBlog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="134" column="14" lean-forward="false" selection-start-line="134" selection-start-column="14" selection-end-line="134" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="116" column="99" lean-forward="true" selection-start-line="116" selection-start-column="99" selection-end-line="116" selection-end-column="99" />
           <folding />
         </state>
       </provider>

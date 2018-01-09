@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ name }}</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/icons.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 
@@ -75,33 +74,6 @@
 {% endblock content2 %}
 
 {% block aside %}
-            <div class="share">
-                <a href="" class="icon icon-more"></a>
-                <a href="" class="icon icon-qqZone"></a>
-                <a href="" class="icon icon-sinaMb"></a>
-                <a href="" class="icon icon-qqMb"></a>
-                <a href="" class="icon icon-renren"></a>
-                <a href="" class="icon icon-weixin"></a>
-                <div class="more clearfix">
-                    <p>分享到</p>
-                    <div class="mid clearfix">
-                        <a href=""><span class="icon icon-allShare"></span> 一键分享</a>
-                        <a href=""><span class="icon icon-qqZone"></span> QQ空间</a>
-                        <a href=""><span class="icon icon-sinaMb"></span> 新浪微博</a>
-                        <a href=""><span class="icon icon-weixin"></span> 微信</a>
-                        <a href=""><span class="icon icon-renren"></span> 人人网</a>
-                        <a href=""><span class="icon icon-qqMb"></span> 腾讯微博</a>
-                        <a href=""><span class="icon icon-happy"></span> 开心网</a>
-                        <a href=""><span class="icon icon-friend"></span> 腾讯朋友</a>
-                        <a href=""><span class="icon icon-tieba"></span> 百度贴吧</a>
-                        <a href=""><span class="icon icon-douban"></span> 豆瓣网</a>
-                        <a href=""><span class="icon icon-baidu"></span> 百度</a>
-                        <a href=""><span class="icon icon-tianya"></span> 天涯网</a>
-                        <a href=""><span class="icon icon-facebook"></span> Facebook</a>
-                    </div>
-                    <p><span class="icon icon-more"></span> 更多...</p>
-                </div>
-            </div>
             <div class="newest">
                 <h2>最新<span>文章</span></h2>
                 <ul>
@@ -142,6 +114,7 @@
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
     {% block jsFiles %}{% endblock jsFiles %}
     <script type="text/javascript" src="{% static 'js/index.js' %}"></script>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"{{ article.A_title|default:'谭峰个人博客' }}","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"300"},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 </body>
 </html>
