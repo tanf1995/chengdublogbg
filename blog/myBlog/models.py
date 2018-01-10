@@ -36,6 +36,7 @@ class Article(models.Model):
 class Message(models.Model):
     M_author = models.CharField(max_length=100)
     M_content = models.CharField(max_length=4000)
+    M_pubTime = models.DateField(auto_now_add=True)
     M_delete = models.BooleanField(default=False)
 
     def __str__(self):

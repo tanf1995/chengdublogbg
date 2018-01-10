@@ -43,7 +43,7 @@
                         作者：<span>{{ article.A_author }}</span>
                     </span>
                     <span class="classify">
-                        分类：[<a href="">{{ article.A_classify }}</a>]
+                        分类：[<a>{{ article.A_classify }}</a>]
                     </span>
                 </p>
             </div>
@@ -51,15 +51,7 @@
         </div>
         <div class="right aside">
             <div class="weather">
-                <div class="content clearfix">
-                    <div class="city">
-                        <p>成都</p>
-                    </div>
-                    <div class="info">
-                        <p>今日</p>
-                        <p>7-13°</p>
-                    </div>
-                </div>
+                <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=8&num=3"  width="225" height="80" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
             </div>
 {% endblock content1 %}
 
