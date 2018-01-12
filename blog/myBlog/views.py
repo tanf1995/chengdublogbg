@@ -169,7 +169,7 @@ def article(request, id):
     return render(request, 'myBlog/detail.html', context=context)
 
 
-static_base = 'http://192.168.40.128:8080'
+static_base = 'http://127.0.0.1:80'
 static_url = static_base + settings.MEDIA_URL  # 上传文件展示路径前缀
 
 
